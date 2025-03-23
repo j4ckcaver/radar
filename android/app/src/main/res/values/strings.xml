@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">RadarApp</string>
+    <string name="location_service_channel_name">Konum Takibi</string>
+    <string name="location_service_channel_description">Arka planda konum takibi yapar</string>
+</resources>

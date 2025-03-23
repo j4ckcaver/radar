@@ -1,0 +1,67 @@
+{
+  "expo": {
+    "name": "RadarTrackingApp",
+    "slug": "RadarTrackingApp",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "UIBackgroundModes": [
+          "location",
+          "fetch",
+          "remote-notification"
+        ],
+        "NSLocationWhenInUseUsageDescription": "Bu uygulama, hedef konuma yaklaştığınızda bildirim göndermek için konumunuzu kullanır.",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "Bu uygulama, uygulama arka planda veya kapalı olduğunda bile hedef konuma yaklaştığınızda bildirim göndermek için konumunuzu kullanır.",
+        "NSLocationAlwaysUsageDescription": "Bu uygulama, uygulama arka planda veya kapalı olduğunda bile hedef konuma yaklaştığınızda bildirim göndermek için konumunuzu kullanır."
+      },
+      "bundleIdentifier": "com.yourcompany.radartrackingapp"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_BACKGROUND_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "FOREGROUND_SERVICE",
+        "RECEIVE_BOOT_COMPLETED",
+        "VIBRATE"
+      ],
+      "package": "com.yourcompany.radartrackingapp"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Bu uygulama, uygulama arka planda veya kapalı olduğunda bile hedef konuma yaklaştığınızda bildirim göndermek için konumunuzu kullanır.",
+          "isAndroidBackgroundLocationEnabled": true,
+          "isIosBackgroundLocationEnabled": true
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/notification-icon.png",
+          "color": "#ffffff"
+        }
+      ]
+    ]
+  }
+}
